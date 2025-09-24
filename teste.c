@@ -15,10 +15,7 @@ int main() {
      int Pontos, Pontos2;
      float divisao, divisao2 , divisao3 , divisao4;
 
-     divisao= população / area;
-     divisao2= pib / população;
-     divisao3=população2 / area2;
-     divisao4= pib2 / população2;
+
 
 
 
@@ -30,7 +27,7 @@ int main() {
      printf("Digite o Codigo do Estado: %c",Codigo);
      scanf("%s", &Codigo);
      printf("Digite o nome do Estado:",Nome);
-     scanf("%s", &Nome[20]);
+     scanf("%s", &Nome);
      printf("Digite a populacao da estado:", população);
      scanf("%d", &população);
      printf("Digite a Area da Cidade:", area);
@@ -48,7 +45,7 @@ int main() {
      printf("Digite o Codigo do Estado2:",Codigo2);
      scanf("%s", &Codigo2);
      printf("Digite o nome do Estado:",Nome2);
-     scanf("%s", &Nome2[20]);
+     scanf("%s", &Nome2);
      printf("Digite a populacao da estado:", população2);
      scanf("%d", &população2);
      printf("Digite a Area da Cidade:",area2);
@@ -58,13 +55,18 @@ int main() {
      printf("Digite quantos pontos tem a estado:",Pontos2);
      scanf("%d", &Pontos2);
 
-     printf("A densidade populacional da cidade 1 e :%.2f", divisao);
-     printf("A densidade populacional da cidade 2 e :%.2f", divisao3);
+     divisao= população / area;
+     divisao2= pib / população;
+     divisao3=população2 / area2;
+     divisao4= pib2 / população2;
+
+     printf("A densidade populacional da cidade 1 e :%.2f\n", divisao);
+     printf("A densidade populacional da cidade 2 e :%.2f\n", divisao3);
 
 
-     printf("Agora vamos mostrar o PIB per capita de cada Cidade:/n");
+     printf("Agora vamos mostrar o PIB per capita de cada Cidade:\n");
 
-     printf("O PIB da cidade 1 e:%.2f", divisao2);
+     printf("O PIB da cidade 1 e:%.2f\n", divisao2);
      printf("o PiB da cidade 2 e:%.2f", divisao4);
 
 
