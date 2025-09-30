@@ -67,6 +67,10 @@ int main() {
     densidade2 = (float) populacao2 / area2;
     pibPerCapita2 = pib2 / populacao2;
 
+    //=====Calculo de super poder====
+    SuperPoderA = (float) populacao + area + pib + Pontos + pibPerCapita1;
+    SuperPoderB = (float) populacao2 + area2 + pib2 + Pontos2 + pibPerCapita2;
+
     // ===== Resultados detalhados =====
     printf("\n===== APRESENTAÇÃO COMPLETA DAS CIDADES =====\n\n");
 
@@ -80,6 +84,8 @@ int main() {
     printf("PIB: %.2f bilhões\n", pibBilhoes);
     printf("PIB per capita: %.2f\n", pibPerCapita1);
     printf("Densidade populacional: %.2f hab/km²\n", densidade1);
+    printf("O valor do super poder e:%f",SuperPoderA);
+    
 
     printf("\n----- CIDADE 2 -----\n");
     printf("Estado: %c\n", Estado2);
@@ -91,6 +97,7 @@ int main() {
     printf("PIB: %.2f bilhões\n", pibBilhoes2);
     printf("PIB per capita: %.2f\n", pibPerCapita2);
     printf("Densidade populacional: %.2f hab/km²\n", densidade2);
+    printf("O valor do super poder e:%f",SuperPoderB);
 
     return 0;
 }
