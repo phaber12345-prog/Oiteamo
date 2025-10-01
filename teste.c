@@ -11,6 +11,7 @@ int main() {
     int Pontos, Pontos2;
     float densidade1, densidade2;
     float pibPerCapita1, pibPerCapita2;
+    float SuperPoderA , SuperPoderB;
 
     // ===== Cidade 1 =====
     printf("Digite o Estado (uma letra): ");
@@ -84,7 +85,7 @@ int main() {
     printf("PIB: %.2f bilhões\n", pibBilhoes);
     printf("PIB per capita: %.2f\n", pibPerCapita1);
     printf("Densidade populacional: %.2f hab/km²\n", densidade1);
-    printf("O valor do super poder e:%f",SuperPoderA);
+    printf("O valor do super poder e:%.2f",SuperPoderA);
     
 
     printf("\n----- CIDADE 2 -----\n");
@@ -97,7 +98,23 @@ int main() {
     printf("PIB: %.2f bilhões\n", pibBilhoes2);
     printf("PIB per capita: %.2f\n", pibPerCapita2);
     printf("Densidade populacional: %.2f hab/km²\n", densidade2);
-    printf("O valor do super poder e:%f",SuperPoderB);
+    printf("O valor do super poder e:%.2f\n",SuperPoderB);
+
+    printf("*******************Agora vamos comparar as cartas e ver quem e o vencedor************************\n");
+    printf("----Carta 1 = 1----\n");
+    printf("----Carta 2 = 0----\n");
+    printf("----Carta de menor valor vence em densidade podendo aver variacao no resultado----\n");
+
+    printf("populacao > populacao2 =%d\n",populacao > populacao2);
+    printf("area > arena2 =%d\n",area > area2);
+    printf("pib > pib2 = %d\n", pib > pib2);
+    printf("pontos > pontos2 =%d\n",Pontos > Pontos2);
+    printf("Densidade < Densidade2 =%d\n",densidade1 < densidade2);
+    printf("Pib > Pib2 =%d",pib > pib2);
+    printf("Superpoder1 > Superpoder2 =%d\n", SuperPoderA > SuperPoderB);
+
+    
+
 
     return 0;
 }
